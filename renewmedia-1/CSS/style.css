@@ -1,0 +1,582 @@
+@font-face {
+    font-family:'Roboto Light' ;
+    src: url(../FONTS/Roboto-Light.ttf);
+}
+@font-face {
+    font-family:'Roboto Medium' ;
+    src: url(../FONTS/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family:'Roboto Thin' ;
+    src: url(../FONTS/Roboto-Thin.ttf);
+} 
+@font-face {
+    font-family:'Roboto' ;
+    src: url(../FONTS/Roboto-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --span1-color-:#49beed;
+    --main-color-:#000000;
+    --bg-1-color-:#275599;
+    --bg-2-color:#111111;
+    --bg-3-color:#232323;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-color: var(--main-color-);
+    font-family:' Roboto Light';
+    font-family:' Roboto Medium';
+    font-family:' Roboto Thin';
+    
+    
+}
+a{
+    text-decoration: none;
+}
+
+.main-title{
+    font-family: 'Roboto';
+}
+.line ::after{
+    content: "";
+    width: 273px;
+    height: 1px;
+    background-color: var(--span1-color-);
+    position: absolute;
+    bottom: -102px;
+    left: 50%;
+    transform: translate(-50%) ;
+}
+
+.circule::before{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-top: -2px;
+    background-color: var(--span1-color-);
+}
+/*******************
+Main
+*******************/
+h2{
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+h2 span{
+    color: var(--span1-color-);
+}
+
+/*******************
+Start loader
+*******************/
+/* Center the logo */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:var(--main-color-); /* adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* ensure it's on top */
+}
+
+  /* Style the logo */
+.logo {
+    max-width: 300px; /* Adjust the size as needed */
+    max-height: 300px;
+}
+
+  /* Hide content until loading is complete */
+.content {
+    display: none;
+}
+/*******************
+Start Navbar
+*******************/
+
+/************** navbar ******************/
+.navbar.transparent {
+    background-color: transparent;
+}
+.navbar.black {
+    background-color: #000000; /* Change this to your desired color */
+}
+
+.navbar{
+    padding: 0;
+    min-height: 75px;
+    background-color: transparent;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+}
+.navbar-brand img{
+    display: block;
+    width: 50px;
+}
+.navbar a{
+    color: white;
+}
+.navbar-scrolled{
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+}
+/**/
+.navbar-toggler{
+    background-color: var(--span1-color-);
+}
+.navbar-collapse{
+    
+    text-align:end;
+}
+.collapse .navbar-collapse{
+    background-color:white;
+
+}
+
+.navbar-toggler .icon{
+    color: white;
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+    padding: 7px 3px 7px 10px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 20px
+
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar-brand{
+    color:var(--span1-color-);
+}
+
+.dropdown-menu{
+    background-color: #000000;
+}
+
+.dropdown-item{
+    color: white;
+}
+.dropdown-item:hover{
+    color: var(--span1-color-);
+}
+
+/*******************
+End Navbar
+*******************/
+/************************* START landing*********************/
+.landing {
+    background-color: var(--dark1-color);
+    min-height: calc(100vh - 72px);
+    
+}
+/************************* END landing*********************/
+/*******************
+Start Video
+*******************/
+.video {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+/*******************
+End Video
+*******************/
+
+/*******************
+Start We-Are
+*******************/
+.we-are .container {
+    background-color: var(--bg-2-color);
+    color: white;
+    padding: 45px;
+}
+.we-are p{
+    font-family: 'Montserrat!important;';
+    font-size: 20px;
+}
+.line-b{
+    background-color: var(--span1-color-);
+    width: 100%;
+    height: 6px;
+}
+/*******************
+End We-Are
+*******************/
+
+/*******************
+Start ABOUT US
+*******************/
+.about-us{
+    color: white;
+
+}
+.about-us p{
+    font-family: 'Montserrat!important;';
+    font-size: 20px;
+}
+.about-us nav{
+    padding-left: 0;
+    --bs-nav-link-hover-color:var(--span1-color-)
+}
+.about-us a{
+    color: white;
+    
+}
+.icon {
+    color: var(--span1-color-);
+    min-height: 40px;
+}
+.tab-content h3{
+    font-family: 'Roboto';
+}
+
+/****************** 
+End ABOUT US
+******************/
+
+/****************** 
+Start Footer
+******************/
+.social-media {
+    background-color: var(--bg-2-color);
+    padding-top: 17px;
+    padding-bottom: 17px;
+    
+}
+.social-media .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.social-media a{
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+.social-media a:hover{
+    color: var(--span1-color-);
+}
+/**********************/
+.footer-info{
+    background-color: var(--bg-3-color);
+    color: white;
+}
+.fo-contacts{
+    padding-left: 90px;
+}
+.footer-info h3{
+    color: var(--span1-color-);
+}
+.footer-info a{
+    color: white;
+}
+.footer-info a:hover{
+    color: var(--span1-color-);
+}
+.Copyright {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 21px;
+}
+/****************** 
+End Footer
+******************/
+
+/*********************************************************START BEHANCE PAGE******************************************/
+main{
+    padding-top: 200px;
+    color: white;
+}
+.content .box{
+    padding: 1PX;
+    overflow: hidden;
+    position: relative;
+}
+.content .box::before{
+    content: attr(data-work);
+    position:absolute;
+    background-color: #000000b0;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-3-color);
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 2PX));
+    color: white;
+
+}
+.content .box:hover::before{
+    transform: translateX(0);
+} 
+/****************** 
+start btn
+******************/
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    
+}
+.arrow a,
+.arrow i{
+    color: white;
+    font-size: 1.5rem;
+}
+.arrow a:hover{
+    color: var(--span1-color-);
+}
+/*********************************************************END BEHANCE PAGE******************************************/
+/********************************************************* START SERVICES PAGE******************************************/
+/*********** navbar-services************/
+#navbar-services{
+    padding: 0;
+    min-height: 75px;
+    background-color: transparent;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+}
+/************ owl-carousel services*************/
+.owl-carousel .owl-item img{
+    display: block;
+    
+    height: 100vh;
+    position: relative;
+}
+.owl-carousel .owl-services{
+    position: relative;
+}
+.owl-carousel .owl-services .items{
+    height: 100vh;
+    position: relative;
+}
+.owl-carousel .owl-services .owl-item img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.carousel-content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 84px;
+}
+
+.carousel-content h1 {
+    font:500 20px/32px Roboto,Helvetica Neue,sans-serif;
+    margin:0 0 16px;
+    letter-spacing: normal;
+}
+
+.carousel-content a {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--span1-color-);
+    outline: none;
+    transition: all .3s;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.carousel-content a:hover{
+    background-color: var(--span1-color-);
+}
+
+/*********************owl-carousel for all pages***********************/
+.main-title{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 60px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+} 
+.main-title::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--dang-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%) ;
+}
+.owl-carousel-success .owl-item img{
+    display: block;
+    width: 60%;
+    height: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 5px;
+    padding-bottom: 50px;
+}
+
+
+/******* side links*******/
+.side-links .Services-links{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    position: absolute;
+    font-family: sans-serif;
+    left: 20px;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%) rotate(-90deg);
+}
+.side-links .Services-links .social-serv-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.side-links .Services-links a{
+    color: white; 
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    font-size: 14px;
+    transform: translateY(-50%); 
+    transition: all .3s;
+}
+
+/***************************************************END SERVICES PAGE******************************************/
+
+/*********************************************************START digital marketing PAGE******************************************/
+/************* START landing***************/
+/***general in digital marketing***/
+.sp-landing{
+    color: var(--span1-color-);
+}
+.landing-so {
+    background-image: url(../images-renew/socialpage01.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1.5;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.landing-so .text-center{
+    width: 100vw;
+    background-color: #ffffff8f;
+}
+.landing-so h1{
+    padding-top: 20px;
+    color: black;
+    font-size: 60px;
+}
+.landing-so h2{
+    padding-top: 15px;
+    font-size: 60px;
+    font-family: cursive;
+    font-weight: revert;
+}
+
+/***************** END landing******************/
+/********** Start success part*****************/
+.success-social .container{
+    color: white;
+    text-align: center;
+}
+.success-social .main-text{
+    color: white;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+.success-social .row svg{
+    color: var(--span1-color-);
+    font-size: 50px;
+    padding-bottom: 30px;
+    padding-top: 70px;
+}
+.success-social h3{
+    font-size: 40px;
+}
+.success-social p{
+    font-size: 19px;
+}
+
+/*********** end success part****************/
+/*********************************************************END digital marketing page******************************************/
+/********************************************************START GRAPHIC PAGE******************************************/
+/*********** owl-carousal ****************/
+#img-owl{
+    height: 70vh;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    margin-bottom: 170px;
+}
+/*********** LANDING****************/
+.landing h1{
+    padding-top: 200px;
+}
+.landing p{
+    color: white;
+    font-size: 20px;
+}
+/***********serv part****************/
+.owl-serv-part h3{
+    
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2em;
+    font-weight: 700;
+    font-size: 23px;
+    margin-top: 35px;
+    margin-bottom: 378px;
+    margin-left: 170px;
+}
+
+/*********************************************************END GRAPHIC PAGE******************************************/

@@ -1,0 +1,31 @@
+/********************************************************START GRAPHIC PAGE******************************************/
+/*********** owl-carousal ****************/
+#img-owl{
+    height: 70vh;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    margin-bottom: 170px;
+}
+/*********** LANDING****************/
+.landing h1{
+    padding-top: 200px;
+}
+.landing p{
+    color: white;
+    font-size: 20px;
+}
+/***********serv part****************/
+.owl-serv-part h3{
+    
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2em;
+    font-weight: 700;
+    font-size: 23px;
+    margin-top: 35px;
+    margin-bottom: 378px;
+    margin-left: 170px;
+}
+
+/*********************************************************END GRAPHIC PAGE******************************************/
